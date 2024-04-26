@@ -1,33 +1,221 @@
 /* this is a css style sheet, the syntax for a comment in CSS is different because it's a separate language to HTML */
 /* below I am calling all the different HTML elements that I have used in the page and describing how it should be rendered on screen within the {curly brackets}. */
 body {
-    background: black;
-    color: azure;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
-
+.overall{
+    width: 100%;
+    height: 100%;
+}
 h1 {
-    color: aqua;
+    font-size: 45px;
+    font-family: KAITI;
+    color: rgb(214, 195, 22);
     text-align: center;
+    text-shadow: 0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C;
 }
 
 h2 {
-    color: blueviolet;
+    font-size: 40px;
+    font-family: KAITI;
+    color: rgb(226, 43, 43);
+    text-shadow: 0 0 4px #363c00,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C;
+    text-align: center;
+    padding-top: 50px;
 }
 
 p {
-    color: chartreuse;
+    color: rgb(0, 0, 0);
 }
 
 footer {
     position: fixed; bottom: 0em;
 }
 
-/* to call a class put a . before its name */
-.newacronym{
-    color: aquamarine;
-}
-
 .box1 {
     border: thick double hotpink;
     padding: 1em;
+}
+.authorName{
+    position: relative;
+    float: right;
+    /* top:10px; */
+    width: 300px;
+    height: 20px;
+    color: rgb(255, 255, 255);
+    /* border: 1px solid white; */
+    font-size: 27px;
+    font-family: Xingkai SC;
+    text-shadow: 0 0 4px #363c00,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C;
+}
+.pageHead{
+    width: 100%;
+    height: 100%;
+    margin-bottom:10px;
+    /* border: 1px solid rgb(85, 36, 82); */
+}
+.poem{
+    position: relative;
+    padding-top: 75px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff;
+    opacity: 0;
+    animation: fade-in 2s forwards;
+}
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    40%{
+        opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+#menu{
+    width:100%;
+    /* height:20px; */
+    margin:auto; 
+    clear:both; 
+    vertical-align:bottom;
+} 
+#ul li{
+    list-style-type:none; 
+    clear:both;
+    width:100px;
+    display:inline; 
+    font-size: 35px;
+    text-decoration:none;
+} 
+a{
+    text-decoration:none;  
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff;
+}
+.pageContent{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 100px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22);
+}
+.poem2{
+    width: 45%;
+    position: relative;
+    float: left;
+    /* margin-top: 15px; */
+    margin-left: 100px;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22);
+    opacity: 0;
+    animation: fade-in 2s forwards;
+}
+.poem3{
+    width: 45%;
+    position: relative;
+    float: right;
+    margin-right: 100px;
+    /* margin-top: 15px; */
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22);
+    opacity: 0;
+    animation: fade-in 2s forwards;
+}
+.pageContent2{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+.film1 span{
+    width: 50%;
+    position: relative;
+    float:right;
+    top:200px;
+    margin-right: 200px;
+    margin-bottom: 300px;
+    font-size: 25px;
+    font-family: KAITI;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff;
+}
+
+.film2 span{
+    width: 50%;
+    position: relative;
+    float:left;
+    top:200px;
+    margin-left: 200px;
+    margin-bottom: 300px;
+    font-size: 25px;
+    font-family: KAITI;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff;
 }
