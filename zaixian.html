@@ -1,0 +1,53 @@
+<!DOCTYPE html> <!-- This announces to the machine that the file is written in HTML
+    The index.html file is typically the landing page for a website on github pages (the platform we are going to use to host our websites), which then links to other pages (E.G aboutme.html or surfing.html). If you type your github URL into the browser the index.html page will display by default -->
+    
+    <!-- this is a comment, its not displayed on the page but you can use it to leave notes for youself/inquisitive visitors.-->
+    
+    <head> <!-- The head is where the page begins, here we give important instructons on how to display content contained on the page. -->
+        <link href="style.css" rel="stylesheet"> <!-- this links your HTML file to your style sheet, which gives instructions on how the page is displayed including; font, background, layout, favicon -->
+        <title> Welcome to my webpage </title> <!-- The title of your page will display in the tab. Fun fact the icon displayed in the tab is called a favicon. -->
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    </head>
+    <body style="background: url(background/img/3.jpg) no-repeat center center;background-size: cover;background-attachment: fixed;"> <!-- The body contains the majority of the content on the page, the bulk of your text, images, links, elements will all be located in here.-->
+        <div class="overall">
+            <div class="pageHead">
+                <h1><a href="main.html">The intertwining between the body and the online world</a></h1>
+                <p class ="authorName">zheyuan liu  20752776</p>
+            </div>
+        </div>
+        <div id="virt">
+            <div class="film3" style="display: block;">
+                <span>
+                    离线存在方式中的身体表现
+                </span>
+                <span>
+                    在线存在方式中的身体表现
+                </span>
+            </div>
+            <div class="film4" >
+                <span>
+                    <img src="background/img/tp5.jpg" style="width: 700px;height: 700px;display: block;" alt="" onclick="display()">
+                </span>
+            </div> 
+        </div>
+        <div id="virt2" style="display: none;">
+            <div class="virt" >
+                <span>
+                    <img src="background/img/tp4.jpg" style="width: 600px;height: 600px;display: block;" alt="" id="tp">
+                </span>
+                <span>
+                    <img src="background/img/tp3.jpg" style="width:600px;height: 600px;display: block;" alt="" id="tp2">
+                </span>
+            </div> 
+        </div>
+    </body>
+    <footer> <!-- The footer is a the end of the page, it's totally optional and typically contains a note about the last update, or a dis on your sworn enemy.-->
+        <p>Made with love by zheyuan liu 20752776 </p>
+    </footer>
+    
+    <script>
+        function display(){
+            document.getElementById('virt').style.display="none";
+            document.getElementById('virt2').style.display="block"
+        }
+    </script>

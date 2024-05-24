@@ -1,0 +1,30 @@
+<!DOCTYPE html> <!-- This announces to the machine that the file is written in HTML
+The index.html file is typically the landing page for a website on github pages (the platform we are going to use to host our websites), which then links to other pages (E.G aboutme.html or surfing.html). If you type your github URL into the browser the index.html page will display by default -->
+
+<!-- this is a comment, its not displayed on the page but you can use it to leave notes for youself/inquisitive visitors.-->
+
+<head> <!-- The head is where the page begins, here we give important instructons on how to display content contained on the page. -->
+    <link href="style.css" rel="stylesheet"> <!-- this links your HTML file to your style sheet, which gives instructions on how the page is displayed including; font, background, layout, favicon -->
+    <title> Welcome to my webpage </title> <!-- The title of your page will display in the tab. Fun fact the icon displayed in the tab is called a favicon. -->
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body  style="background: url(background/img/bg1.jpg) no-repeat center center;background-size: cover;background-attachment: fixed;"> <!-- The body contains the majority of the content on the page, the bulk of your text, images, links, elements will all be located in here.-->
+    <div class="overall">
+        <div class="pageHead">
+            <h1><a href="main.html">The intertwining between the body and the online world</a></h1>
+            <p class ="authorName">zheyuan liu  20752776</p>
+            <div id="menu"> 
+                <ul id="ul"> 
+                    <li><a href="poem.html" style="position:relative;left: 500px;top:50px;font-size: 120px;font-family: Arial, Helvetica, sans-serif;color:aqua">诗歌 </a></li> 
+                    <li><a href="film.html" style="position:relative;left: 650px;top:180px;font-size: 80px;font-family: Georgia, 'Times New Roman', Times, serif;color:blueviolet">影视片段 </a></li> 
+                    <li><a href="virtually.html" style="position:relative;left: 70px;top:300px;font-size: 60px;font-family: 'Times New Roman', Times, serif;color:bisque">作品“虚拟身份” </a></li> 
+                    <li><a href="zaixian.html" style="position:relative;left: 200px;top:450px;font-size: 77px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">离线和在线方式对比 </a></li> 
+                    <li><a href="identity.html" style="position:relative;left: -200px;top:550px;font-size: 77px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">虚拟身份和现实身份 </a></li> 
+                </ul> 
+            </div> 
+        </div>
+    </div>
+</body>
+<footer> <!-- The footer is a the end of the page, it's totally optional and typically contains a note about the last update, or a dis on your sworn enemy.-->
+    <p>Made with love by zheyuan liu 20752776 </p>
+</footer>
