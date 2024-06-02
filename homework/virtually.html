@@ -1,0 +1,60 @@
+<!DOCTYPE html> <!-- This announces to the machine that the file is written in HTML
+    The index.html file is typically the landing page for a website on github pages (the platform we are going to use to host our websites), which then links to other pages (E.G aboutme.html or surfing.html). If you type your github URL into the browser the index.html page will display by default -->
+    
+    <!-- this is a comment, its not displayed on the page but you can use it to leave notes for youself/inquisitive visitors.-->
+    
+    <head> <!-- The head is where the page begins, here we give important instructons on how to display content contained on the page. -->
+        <link href="style.css" rel="stylesheet"> <!-- this links your HTML file to your style sheet, which gives instructions on how the page is displayed including; font, background, layout, favicon -->
+        <title> Welcome to my webpage </title> <!-- The title of your page will display in the tab. Fun fact the icon displayed in the tab is called a favicon. -->
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    </head>
+    <body style="background: url(background/img/tp7.png) no-repeat center center;background-size: cover;background-attachment: fixed;"> <!-- The body contains the majority of the content on the page, the bulk of your text, images, links, elements will all be located in here.-->
+        <div class="overall">
+            <div class="pageHead">
+                <h1><a href="main.html">The intertwining between the body and the online world</a></h1>
+            </div>
+            <div id="virt">
+                <div class="virt">
+                    <p>Original photo</p>
+                    <img src="background/img/zp1.jpg" style="width: 100%;height: 100%;display: block;" alt="" onclick="display()">
+                </div>
+                <div class="virt">
+                    <p>Ordered Stacked Look</p>
+                    <img src="background/img/zp2.jpg" style="width: 100%;height: 100%;display: block;" alt="" onclick="display()">
+                </div>
+                <div class="virt">
+                    <p>Pixelated look</p>
+                    <img src="background/img/zp3.jpg" style="width: 100%;height: 100%;display: block;" alt="" onclick="display()">
+                </div>
+                <div class="virt">
+                    <p>the digital look</p>
+                    <img src="background/img/zp4.jpg" style="width: 100%;height: 100%;display: block;" alt="" onclick="display()">
+                </div>
+            </div>
+            <div id="virt2" style="display: none;">
+                <img src="background/img/pt5.jpg" style="width: 30%;height: 420px;display: block;" alt="" onclick="display2()" id="tp1">
+                <img src="background/img/pt4.png" style="width: 30%;height: 420px;display: block;" alt="" onclick="display2()" id="tp2">
+                <img src="background/img/pt3.png" style="width: 30%;height: 420px;display: block;" alt="" onclick="display2()" id="tp3">
+                <img src="background/img/pt.jpg" style="margin-left:8%;width: 40%;height: 100%;display: none;" alt="" id="tp4" onclick="display3()">
+                <img src="background/img/pt2.jpg" style="margin-left:5%;width: 40%;height: 100%;display: none;" alt="" id="tp5" onclick="display3()">
+            </div>
+        </div>
+    </body>
+    
+    <script>
+        function display(){
+            document.getElementById('virt').style.display="none";
+            document.getElementById('virt2').style.display="block"
+        }
+        function display2(){
+            document.getElementById('tp1').style.display="none";
+            document.getElementById('tp2').style.display="none";
+            document.getElementById('tp3').style.display="none";
+            document.getElementById('tp4').style.display="block";
+            document.getElementById('tp5').style.display="block"
+        }
+        function display3(){
+            document.getElementById('virt').style.display="block";
+            document.getElementById('virt2').style.display="none"
+        }
+    </script>

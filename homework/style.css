@@ -1,0 +1,625 @@
+/* this is a css style sheet, the syntax for a comment in CSS is different because it's a separate language to HTML */
+/* below I am calling all the different HTML elements that I have used in the page and describing how it should be rendered on screen within the {curly brackets}. */
+body {
+    /* background: rgb(255, 255, 255); */
+    padding: 0;
+	margin: 0;
+    color: rgb(0, 0, 0);
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+
+}
+.container span{
+    font-size: 125px;
+    font-weight: bold;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    filter: blur(2px);
+    animation: animate 4s linear infinite
+}
+.container span:nth-child(1){
+    animation-delay:0s;
+}
+.container span:nth-child(2){
+    animation-delay:0.25s;
+}
+.container span:nth-child(3){
+    animation-delay:0.5s;
+}
+.container span:nth-child(4){
+    animation-delay:0.75s;
+}
+.container span:nth-child(5){
+    animation-delay:1s;
+}
+.container span:nth-child(6){
+    animation-delay:1.25s;
+}
+.container span:nth-child(7){
+    animation-delay:1.5s;
+}
+.container span:nth-child(8){
+    animation-delay:1.75s;
+}
+.container span:nth-child(9){
+    animation-delay:2s;
+}
+.container span:nth-child(10){
+    animation-delay:2.25s;
+}
+.container span:nth-child(11){
+    animation-delay:2.5s;
+}
+.container span:nth-child(12){
+    animation-delay:2.75s;
+}
+.container span:nth-child(13){
+    animation-delay:3s;
+}
+.container span:nth-child(14){
+    animation-delay:3.25s;
+}
+.container span:nth-child(15){
+    animation-delay:3.5s;
+}
+@keyframes animate{
+    0%,100%{
+        color:#fff;
+        filter:blur(2px);
+        text-shadow:
+        0 0 10px #32ff7e,
+        0 0 20px #32ff7e,
+        0 0 30px #32ff7e,
+        0 0 40px #32ff7e,
+        0 0 100px #32ff7e,
+        0 0 200px #32ff7e,
+        0 0 300px #32ff7e,
+        0 0 400px #32ff7e;
+    }
+    5%,95%{
+        color:#111;
+        filter: blur(0px);
+        text-shadow: none;
+    }
+}
+.overall{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: bold;
+    color: #111;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 0 0 4px #000000,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C;
+}
+h2 {
+    font-size: 40px;
+    font-family: KAITI;
+    color: rgb(226, 43, 43);
+    text-shadow: 0 0 4px #363c00,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+p {
+    color: rgb(0, 0, 0);
+}
+
+footer {
+    position: fixed; bottom: 0em;
+}
+
+.box1 {
+    border: thick double hotpink;
+    padding: 1em;
+}
+.authorName{
+    position: relative;
+    float: right;
+    /* top:10px; */
+    width: 300px;
+    height: 20px;
+    color: rgb(255, 255, 255);
+    /* border: 1px solid white; */
+    font-size: 27px;
+    font-family: Xingkai SC;
+    text-shadow: 0 0 4px #363c00,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C,
+    0 0 4px #32003C;
+}
+.pageHead{
+    width: 100%;
+    height: 100%;
+    /* margin-bottom:10px; */
+    /* border: 1px solid rgb(85, 36, 82); */
+}
+
+.poem{
+    position: relative;
+    padding-top: 75px;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff;
+    opacity: 0;
+    animation: fade-in 2s forwards;
+}
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    40%{
+        opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+#menu{
+    width:100%;
+    /* height:20px; */
+    margin:auto; 
+    clear:both; 
+    vertical-align:bottom;
+}
+#ul li{
+    list-style-type:none; 
+    clear:both;
+    width:100px;
+    display:inline; 
+    font-size: 35px;
+    text-decoration:none;
+} 
+a{
+    text-decoration:none;  
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff;
+}
+#menu a:hover{
+    transform: scale(1.4);
+    transition: 0.6s;
+    text-decoration:none;  
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 4px rgb(255, 0, 0),
+    0 0 4px rgb(255, 0, 0),
+    0 0 4px rgb(255, 0, 0),
+    0 0 4px rgb(255, 0, 0),
+    0 0 4px rgb(255, 0, 0),
+    0 0 4px rgb(255, 0, 0),
+    0 0 4px rgb(255, 0, 0);
+}
+.pageContent{
+    width: 100%;
+    height: 100%;
+    /* margin-bottom: 100px; */
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22);
+}
+.poem2{
+    width: 35%;
+    position: relative;
+    float: left;
+    /* margin-top: 15px; */
+    margin-left: 8%;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22);
+    opacity: 0;
+    animation: fade-in 2s forwards;
+}
+.poem3{
+    width: 45%;
+    position: relative;
+    float: right;
+    margin-right: 10%;
+    /* margin-top: 15px; */
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22),
+    0 0 4px rgb(214, 195, 22);
+    opacity: 0;
+    animation: fade-in 2s forwards;
+}
+.pageContent2{
+    width: 100%;
+    height: 100%;
+}
+
+.film1 span{
+    font-size: 35px;
+    font-family: KAITI;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff;
+}
+.film1{
+    width:40%;
+    height:100%;
+    position: relative;
+    float:left;
+    top:80px;
+    margin-left: 10%;
+}
+.film2{
+    width: 40%;
+    height:100%;
+    position: relative;
+    float:left;
+    top:80px;
+    margin-left: 5%;
+}
+.film3 {
+    width:100%;
+    text-align: center;
+}
+.film3 span{
+    font-weight: bolder;
+    position: relative;
+    font-size: 40px;
+    font-family: KAITI;
+    color: rgb(255, 42, 42);
+    text-shadow: 0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff,
+    0 0 4px #ffffff;
+}
+.film4 {
+    width:100%;
+    height: 70%;
+    text-align: center;
+}
+.film5 {
+    width:100%;
+    height: 70%;
+    text-align: center;
+}
+.film4 img{
+    float: left;
+    margin-left:6%;
+    margin-top: 2%
+}
+.film5 img{
+    float: left;
+    margin-left:6%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+#film3{
+    width:100%;
+    height:auto;
+    text-align: center;
+}
+#virt{
+    width:100%;
+    height:auto;
+    text-align: center;
+}
+.virt{
+    width:20%;
+    margin-left: 4%;
+    float: left;
+}
+#virt2{
+    width:100%;
+    height: 70%;
+    text-align: center;
+}
+#virt2 img{
+    float: left;
+    margin-left:2%;
+    margin-top: 2%
+}
+#line{
+    width:100%;
+    height:auto;
+    text-align: center;
+}
+#line2{
+    width:100%;
+    height:auto;
+    text-align: center;
+}
+#line3{
+    width:100%;
+    height:auto;
+    text-align: center;
+}
+#line img{
+    width:30%;
+    height: 550px;
+    float: left;
+    margin-left: 14%;
+    margin-top: 2%;
+}
+#line2 img{
+    width:30%;
+    height:550px;
+    float: left;
+    margin-left: 14%;
+    margin-top: 2%;
+}
+#line3 img{
+    width:30%;
+    height:550px;
+    float: left;
+    margin-left: 14%;
+    margin-top: 2%;
+}
+#line p{
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000;
+    margin-top: 3%;
+}
+#line #content{
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000;
+    margin-top: 32%;
+    margin-left: 15%; 
+    /* border: 1px solid red; */
+    width:70%;
+}
+#line2 p{
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000;
+    margin-top: 3%;
+}
+#line3 p{
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000;
+    margin-top: 3%;
+}
+#virt p{
+    font-size: 26px;
+    font-weight: bolder;
+    color:#df7e17;
+    text-shadow: 0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000;
+}
+#line4{
+    width:100%;
+    height:auto;
+    text-align: center;
+}
+#line4 img{
+    width:55%;
+    height:550px;
+    margin-left: 22%;
+    margin-top: 2%;
+}
+#line4 p{
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000;
+    margin-top: 3%;
+}
+#line5{
+    width:100%;
+    height:auto;
+    text-align: center;
+}
+#line5 img{
+    width:35%;
+    height:550px;
+    float: left;
+    margin-left: 10%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+#line5 p{
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000;
+    margin-top: 3%;
+}
+#identity{
+    width:100%;
+    height: auto;
+    text-align: center;
+}
+.identity p{
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000;
+    /* margin-top: 3%; */
+}
+#identity img{
+    width:19%;
+    height: 100%;
+    float: left;
+    margin-left:11%;
+    /* margin-top: 2% */
+}
+#identity #content{
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000;
+    margin-top: 34%;
+    margin-left: 15%; 
+    width:70%;
+}
+#idcard{
+    width:100%;
+    height: auto;
+    text-align: center;
+}
+#idcard img{
+    width:45%;
+    height: 100%;
+    float: left;
+    margin-left:27.5%;
+    /* margin-top: 2% */
+}
+#idcard #content{
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000;
+    margin-top: 34%;
+    margin-left: 15%; 
+    width:70%;
+}
+#Virtual{
+    width:100%;
+    height: auto;
+    text-align: center;
+}
+#Virtual img{
+    width:30%;
+    height: 100%;
+    float: left;
+    margin-left:13%;
+    /* margin-top: 2% */
+}
+#Virtual #content{
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000,
+    0 0 4px #000000;
+    margin-top: 34%;
+    margin-left: 15%; 
+    width:70%;
+}
